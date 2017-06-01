@@ -30,8 +30,9 @@
 
   <script>
     backboneReady(() => {
-      var appViewer = new AppView();
-      appViewer.videos.reset(exampleVideoData);
+
+      var videos = new Videos(exampleVideoData);
+      new AppView({el: $('#app'), collection: videos}).render();
     });
   </script>
 
