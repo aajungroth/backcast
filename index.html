@@ -19,6 +19,7 @@
   </div>
 
   <script src="src/data/exampleVideoData.js"></script>
+  <script src="src/config/youtube.js"></script>
 
   <script src="src/models/video.js"></script>
   <script src="src/collections/videos.js"></script>
@@ -32,9 +33,9 @@
 
   <script>
     backboneReady(() => {
-
-      var videos = new Videos(exampleVideoData);
-      new AppView({collection: videos}).render();
+      new AppView();
+      //var videos = new Videos(exampleVideoData);
+      //new AppView({collection: videos}).render();
     });
   </script>
 
